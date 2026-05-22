@@ -51,51 +51,51 @@ DATASET = [
             "M1 chip manufacturer",
         ],
         "follow_up": "What was that company's revenue in their most recent fiscal year?",
+    },
+
+    {
+        "id": "insufficient",
+        "type": "insufficient_evidence",
+        "query": "What will the stock price of Apple be on December 31 2030?",
+        "expected_keywords": [
+            "future stock prices cannot be predicted reliably",
+            "financial markets are uncertain",
+            "speculative forecast",
+            "no definitive answer possible",
+            "depends on future market conditions",
+        ],
+        "follow_up": None,
+    },
+
+    {
+        "id": "conflict",
+        "type": "conflicting_sources",
+        "query": "Is coffee beneficial or harmful to health?",
+        "expected_keywords": [
+            "coffee has both benefits and risks",
+            "mixed scientific evidence",
+            "health outcomes vary",
+            "moderate consumption",
+            "studies show conflicting findings",
+            "depends on individual health factors",
+        ],
+        "follow_up": None,
+    },
+
+    {
+        "id": "multiturn",
+        "type": "multi_turn",
+        "query": "What are the main causes of inflation?",
+        "expected_keywords": [
+            "demand-pull inflation",
+            "cost-push inflation",
+            "monetary policy",
+            "supply chain disruptions",
+            "rising prices",
+            "inflation drivers",
+        ],
+        "follow_up": "Which of those causes was most responsible for the 2022 US inflation spike?",
     }
-
-    # {
-    #     "id": "insufficient",
-    #     "type": "insufficient_evidence",
-    #     "query": "What will the stock price of Apple be on December 31 2030?",
-    #     "expected_keywords": [
-    #         "future stock prices cannot be predicted reliably",
-    #         "financial markets are uncertain",
-    #         "speculative forecast",
-    #         "no definitive answer possible",
-    #         "depends on future market conditions",
-    #     ],
-    #     "follow_up": None,
-    # },
-
-    # {
-    #     "id": "conflict",
-    #     "type": "conflicting_sources",
-    #     "query": "Is coffee beneficial or harmful to health?",
-    #     "expected_keywords": [
-    #         "coffee has both benefits and risks",
-    #         "mixed scientific evidence",
-    #         "health outcomes vary",
-    #         "moderate consumption",
-    #         "studies show conflicting findings",
-    #         "depends on individual health factors",
-    #     ],
-    #     "follow_up": None,
-    # },
-
-    # {
-    #     "id": "multiturn",
-    #     "type": "multi_turn",
-    #     "query": "What are the main causes of inflation?",
-    #     "expected_keywords": [
-    #         "demand-pull inflation",
-    #         "cost-push inflation",
-    #         "monetary policy",
-    #         "supply chain disruptions",
-    #         "rising prices",
-    #         "inflation drivers",
-    #     ],
-    #     "follow_up": "Which of those causes was most responsible for the 2022 US inflation spike?",
-    # }
 ]
 
 
