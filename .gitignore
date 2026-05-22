@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Virtual env
+venv/
+.env
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Large outputs
+evaluation/results.json
